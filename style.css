@@ -364,6 +364,10 @@ span {
     -webkit-transition-timing-function: ease-out;
             transition-timing-function: ease-out;
   }
+
+ footer {
+    margin-top: 5%;
+  }
   
   .rotation:hover, .technology__1:hover, .technology__2:hover, .technology__3:hover, .technology__4:hover {
     -webkit-transform: rotate(360deg);
