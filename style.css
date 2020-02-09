@@ -162,6 +162,7 @@ span {
     align-self: center;
 }
 
+
 .img4__page {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
@@ -335,6 +336,7 @@ span {
     }
 }
 
+
 /*----------------------------------------**FIN CSS NAJJAR**-------------------------------------*/
 /*-----------------------------------------**CSS ILYASS**----------------------------------------*/
 
@@ -354,10 +356,219 @@ span {
 /*----------------------------------------**FIN CSS SAMIR**-------------------------------------*/
 /*-----------------------------------------**CSS SANAE**----------------------------------------*/
 
+.rotation, .technology__1, .technology__2, .technology__3, .technology__4 {
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, -webkit-transform 2s;
+    transition: width 2s, height 2s, transform 2s;
+    transition: width 2s, height 2s, transform 2s, -webkit-transform 2s;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+  }
+  
+  .rotation:hover, .technology__1:hover, .technology__2:hover, .technology__3:hover, .technology__4:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  
+  .technology {
+    background-color: #f4f4f4;
+    padding: 5%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+  
+  .technology__1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  
+  .technology__2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  
+  .technology__3 {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+  
+  .technology__4 {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+  }
+  
+  .info {
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  
+  .contact {
+    background-color: #ff7315;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    padding: 5%;
+    color: #f4f4f4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .contact .contact__input {
+    display: block;
+    margin: 2% 0;
+    width: 60%;
+    border-radius: 10px;
+  }
+  
+  .contact .contact__input--send {
+    background-color: #3a3535;
+    color: #f4f4f4;
+    width: 20%;
+    height: 30px;
+    border: none;
+    -webkit-box-shadow: 0 5px 6px #3a35358c;
+            box-shadow: 0 5px 6px #3a35358c;
+  }
+  form{padding-bottom: 30px;}
+  
+  .contact .contact__address, .contact .contact__phone {
+    width: 15px;
+  }
+  
+  .contact h3, .contact p {
+    color: #3a3535;
+    font-size: small;
+    padding-top: 5px;
+  }
+  
+  .description {
+    background-color: #3a3535;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    padding: 5%;
+    color: #f4f4f4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .description .description__heading {
+    display: block;
+  }
+  
+  .description .description__heading p {
+    text-align: justify;
+    padding-top: 10px;
+  }
+  
+  .description .description__lasting {
+    display: block;
+    padding-top: 100px;
+  }
+  
+  .description .description__lasting .icon {
+    width: 5%;
+  }
+  
+  .description .description__lasting p {
+    font-size: small;
+  }
+  
+  
 
 
 
 
-@media screen and (max-width: 480px) {}
+
+
+
 
 /*----------------------------------------**FIN CSS SAMIR**-------------------------------------*/
+
+  @media screen and (max-width: 480px) {
+    .technology {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-rows: (1fr 1fr 1fr 1fr);
+          grid-template-rows: repeat(4, 1fr);
+      -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr;
+    }
+    .technology .technology__1 {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      grid-row: 1/2;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1/2;
+    }
+    .technology .technology__2 {
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      grid-row: 2/3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1/2;
+    }
+    .technology .technology__3 {
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 1;
+      grid-row: 3/4;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1/2;
+    }
+    .technology .technology__4 {
+      -ms-grid-row: 4;
+      -ms-grid-row-span: 1;
+      grid-row: 4/5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1/2;
+    }
+    .info {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-rows: (1fr);
+          grid-template-rows: repeat(2, 1fr);
+      -ms-grid-columns: 1fr;
+          grid-template-columns: 1fr;
+    }
+    .info .description {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 1;
+      grid-row: 1/2;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1/2;
+    }
+    .info .contact {
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      grid-row: 2/3;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+      grid-column: 1/2; 
+  }
+/*----------------------------------------**FIN CSS SAMIR**-------------------------------------*/
+
