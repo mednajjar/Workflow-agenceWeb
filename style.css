@@ -12,13 +12,128 @@ body {
 }
 
 /*---------------------------------------**CSS KHADIJA**---------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'PT Serif', serif;
+  font-size: 1.2em;
+}
+header{
+background-image: url(img/bgimag1.png);
+background-size: cover;
+height: 100vh;
+}
+.header_logo{
+ width:20%;
+ height:90%;
+ margin: 1% 3%;
+}
+.partyheader{
+height: 80px;
+width: 100%;
+}
 
+.partyheader__list{
+float: right;
+margin-right: 20px;
+}
+.partyheader__items{
+display: inline-block;
+line-height: 80px;
+margin: 0 5px;
+}
+.partyheader__list a{
+color: #FF7515;
+font-size: 17px;
+padding: 7px 13px;
+border-radius: 3px;
+text-transform: uppercase;
+text-decoration: none;
+list-style: none;
+}
+a:hover{
+background: rgba(148,0,211,0.3);
+transition: .5s;
+}
 
+.textbtn{
+color:white;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+align-content: flex-end;
+}
+.textbtn__para{
+  background-color: rgba(148,0,211,0.3);
+    width: 60%;
+    height: auto;
+    padding: 9%;
+    margin: 20% -100%;
+    margin-bottom: 6%;
+    border-radius: 10px;
+    text-align: center;
 
+}
+.textbtn__btn{
+color:white;
+    background-color: #FF7515;
+    border:1px solid #FF7515;
+    border-radius: 10px;
+    width: 30%;
+    height: auto;
+    padding: 1%;
+}
+.textbtn__btn:hover{
+  color:#FF7515;
+      background-color: rgb(255, 255, 255);
+      border:1px solid rgb(255, 255, 255);
+  }
 
-
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+  .header_logo{
+    width:30%;
+    height:auto;
+    margin: 5% 3%;
+   }
+  .partyheader{
+    height: auto;
+    width: 100%;
+    }
+    .partyheader__list{
+      background-color: rgb(255, 255, 255);
+      display: block;
+    padding: 1%;
+    margin: 0 4%;
+    }
+    .partyheader__items{
+    display: block;
+    margin: 0;
+    }
+    .textbtn{
+      display: flex;
+      flex-direction: column;
+      }
+      .textbtn__para{
+      width: 70%;
+      height: auto;
+      padding: 9%;
+      margin: 20% 0;
+      margin-bottom: 8%;
+      
+      }
+      .textbtn__btn{
+          width: 40%;
+          height: auto;
+          padding: 1%;
+      }
+}
 
 /*-------------------------------------**FIN CSS KHADIJA**-------------------------------------*/
 /*-----------------------------------------**CSS SAAF**----------------------------------------*/
